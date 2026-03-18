@@ -85,6 +85,11 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || secrets.ANTHROPIC_MODEL || 'claude-3-5-sonnet-20241022' }}
 
+          # Qwen / DashScope（通义千问）
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          QWEN_MODEL: ${{ vars.QWEN_MODEL || secrets.QWEN_MODEL || 'qwen-plus' }}
+          QWEN_REQUEST_DELAY: '1.0'
+          
           # ==========================================
           # 数据源
           # ==========================================
@@ -109,7 +114,7 @@ jobs:
           WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
           
           # 方式二：飞书 Webhook
-          FEISHU_WEBHOOK_URL: ${{ secrets.FEISHU_WEBHOOK_URL }}
+          FEISHU_WEBHOOK_URL: https://open.feishu.cn/open-apis/bot/v2/hook/13266ab4-03c7-4005-a8a8-164041d00d94
           
           # 方式三：Telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
