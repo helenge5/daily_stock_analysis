@@ -114,7 +114,7 @@ jobs:
           WECHAT_MSG_TYPE: ${{ vars.WECHAT_MSG_TYPE || secrets.WECHAT_MSG_TYPE || 'markdown' }}
           
           # 方式二：飞书 Webhook
-          FEISHU_WEBHOOK_URL: https://open.feishu.cn/open-apis/bot/v2/hook/13266ab4-03c7-4005-a8a8-164041d00d94
+          FEISHU_WEBHOOK_URL: https://open.feishu.cn/open-apis/bot/v2/hook/c3409a92-d736-4da4-9344-5bc66a2c3f7f
           
           # 方式三：Telegram
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
